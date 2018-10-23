@@ -7,4 +7,5 @@ INSERT INTO uri_scheme VALUES
 ('urn:uuid'),
 ('urn:iso'),
 ('info:doi'),
-('info:hdl');
+('info:hdl'),
+('tag:openbookpublishers.com,2009');
