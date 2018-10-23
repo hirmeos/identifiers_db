@@ -11,7 +11,7 @@ CREATE TABLE uri(
 );
 
 CREATE TABLE title(
-  title varchar(255) PRIMARY KEY NOT NULL
+  title text PRIMARY KEY NOT NULL
 );
 
 CREATE TABLE work_type(
@@ -32,7 +32,7 @@ CREATE TABLE work_relation(
 
 CREATE TABLE work_title(
   work_id uuid NOT NULL REFERENCES work(work_id) ON DELETE CASCADE,
-  title varchar(255) NOT NULL REFERENCES title ON UPDATE CASCADE,
+  title text NOT NULL REFERENCES title ON UPDATE CASCADE,
   PRIMARY KEY(work_id, title)
 );
 
