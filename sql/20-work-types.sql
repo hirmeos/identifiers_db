@@ -24,4 +24,6 @@ INSERT INTO work_type VALUES
 ('dataset'),
 ('book-series'),
 ('edited-book'),
-('standard-series');
+('standard-series'),
+('peer-review'),
+('proceedings-series');
