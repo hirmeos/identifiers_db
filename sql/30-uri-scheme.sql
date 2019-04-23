@@ -9,4 +9,5 @@ INSERT INTO uri_scheme VALUES
 ('urn:nbn'),
 ('info:doi'),
 ('info:hdl'),
-('tag:openbookpublishers.com,2009');
+('tag:openbookpublishers.com,2009'),
+('tag:oapen.org,2008');
