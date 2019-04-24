@@ -45,3 +45,7 @@ CREATE TABLE work_uri(
   CONSTRAINT work_uri_uri_fkey FOREIGN KEY (uri_scheme, uri_value) REFERENCES uri (uri_scheme, uri_value) ON UPDATE CASCADE
 );
 CREATE UNIQUE INDEX canonical_uri ON work_uri(work_id, uri_scheme) WHERE canonical = TRUE;
+
+CREATE INDEX identifiers ON work_uri(uri_scheme, uri_value, canonical);
+CREATE INDEX lower_titles ON work_title(lower(title));
+CREATE INDEX title_length ON work_title(length(title));
