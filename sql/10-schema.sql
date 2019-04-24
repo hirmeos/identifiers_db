@@ -47,3 +47,4 @@ CREATE TABLE work_uri(
 CREATE UNIQUE INDEX canonical_uri ON work_uri(work_id, uri_scheme) WHERE canonical = TRUE;
 
 CREATE INDEX identifiers ON work_uri(uri_scheme, uri_value, canonical);
+CREATE INDEX lower_titles ON work_title(lower(title));
